@@ -1,0 +1,32 @@
+BEGIN TRANSACTION;
+
+DROP TABLE IF EXISTS user_info, art_info, gallery_info;
+
+CREATE TABLE user_info (
+
+	user_id serial PRIMARY KEY,
+	user_name varchar(80) NOT NULL,
+	email_address varchar(80) NOT NULL,
+	password varchar(80) NOT NULL
+
+);
+
+CREATE TABLE art_info (
+
+	art_id serial PRIMARY KEY,
+	caption varchar(80),
+	description varchar(500)
+
+);
+
+CREATE TABLE gallery_info (
+
+	user_id integer,
+	art_id integer,
+	CONSTRAINT pk_gallery PRIMARY KEY (user_id, art_id),
+	FOREIGN KEY (user_id) REFERENCES user_info(user_id),
+	FOREIGN KEY (art_id) REFERENCES art_info(art_id)
+
+);
+
+COMMIT;
