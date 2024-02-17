@@ -1,19 +1,19 @@
 package main.java.org.example.model;
 
-public class loginDto
+public class LoginDto
 {
     private String username;
     private String password;
     private String emailAddress;
 
-    public loginDto(String usernameOrEmailAddress, String password)
+    public LoginDto(String usernameOrEmailAddress, String password)
     {
         this.username = usernameOrEmailAddress;
         this.password = password;
         this.emailAddress = usernameOrEmailAddress;
     }
 
-    public loginDto(String username, String password, String emailAddress)
+    public LoginDto(String username, String password, String emailAddress)
     {
         this.username = username;
         this.password = password;
