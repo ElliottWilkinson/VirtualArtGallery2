@@ -17,6 +17,7 @@ CREATE TABLE art_info (
 	caption varchar(80),
 	description varchar(500)
 
+
 );
 
 CREATE TABLE gallery_info (
