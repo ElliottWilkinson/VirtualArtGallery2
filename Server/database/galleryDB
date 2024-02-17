@@ -7,7 +7,8 @@ CREATE TABLE user_info (
 	user_id serial PRIMARY KEY,
 	user_name varchar(80) NOT NULL,
 	email_address varchar(80) NOT NULL,
-	password varchar(80) NOT NULL
+	password varchar(80) NOT NULL, 
+	role varchar (50) NOT NULL
 
 );
 
@@ -15,13 +16,15 @@ CREATE TABLE art_info (
 
 	art_id serial PRIMARY KEY,
 	caption varchar(80),
-	description varchar(500)
+	description varchar(500),
+	image_name varchar(500) NOT NULL
 
 
 );
 
 CREATE TABLE gallery_info (
 
+    gallery_id serial,
 	user_id integer,
 	art_id integer,
 	CONSTRAINT pk_gallery PRIMARY KEY (user_id, art_id),
