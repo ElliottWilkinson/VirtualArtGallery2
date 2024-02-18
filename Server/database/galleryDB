@@ -15,10 +15,11 @@ CREATE TABLE user_info (
 CREATE TABLE art_info (
 
 	art_id serial PRIMARY KEY,
+	image_name varchar(500) NOT NULL,
 	caption varchar(80),
 	description varchar(500),
-	image_name varchar(500) NOT NULL
-
+	user_id integer,
+	CONSTRAINT fk_artist_id FOREIGN KEY (user_id) REFERENCES user_info(user_id)
 
 );
 
@@ -32,5 +33,26 @@ CREATE TABLE gallery_info (
 	FOREIGN KEY (art_id) REFERENCES art_info(art_id)
 
 );
+
+--INSERT STATEMENTS
+
+--users
+
+INSERT INTO user_info (user_name, email_address, password, role) VALUES
+('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'),
+('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'),
+('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'),
+('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'),
+('bacoose', 'bacoose@user.com', 'password', 'ROLE_USER');
+
+--art
+
+INSERT INTO art_info (image_name, caption, description, user_id) VALUES
+('./img/battleBunneArtPiece1.png', 'Aphrodite', 'fanart for the roguelike Hades', 2),
+('./img/battleBunneArtPiece2.png', 'Ceres', 'original design for a dnd player character', 2),
+('./img/battleBunneArtPiece3.png', 'Leo', 'valentines variant of a dnd player character', 2),
+('./img/battleBunneArtPiece4.png', 'Velvari', 'original design for a dnd player character', 2);
+--CONTINUE WITH SILENTCHILLZ
+
 
 COMMIT;
