@@ -35,23 +35,44 @@ CREATE TABLE gallery_info (
 
 --INSERT STATEMENTS
 
---users
+--user information
 
 INSERT INTO user_info (user_name, email_address, password, role) VALUES
-('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'), --user ID 1
-('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'), --user ID 2
-('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'), --user ID 3
-('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'), --user ID 4
+('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'),
+('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'),
+('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'),
+('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'),
 ('bacoose', 'bacoose@user.com', 'password', 'ROLE_USER'); --user ID 5
 
---art
+--art information
 
 INSERT INTO art_info (image_name, caption, description, user_id) VALUES
 ('./img/battleBunneArtPiece1.png', 'Aphrodite', 'fanart for the roguelike Hades', 2), --art ID 1
 ('./img/battleBunneArtPiece2.png', 'Ceres', 'original design for a dnd player character', 2), --art ID 2
 ('./img/battleBunneArtPiece3.png', 'Leo', 'valentines variant of a dnd player character', 2), --art ID 3
-('./img/battleBunneArtPiece4.png', 'Velvari', 'original design for a dnd player character', 2); --art ID 4
---CONTINUE WITH SILENTCHILLZ
+('./img/battleBunneArtPiece4.png', 'Velvari', 'original design for a dnd player character', 2), --art ID 4
+('./img/silentChillzPiece1.png', 'Jeza', 'design sheet for a dnd player character', 3), --art ID 5
+('./img/silentChillzPiece2', 'Malyvaly', 'couple piece of 2 dnd player characters', 3), --art ID 6
+('./img/silentChillzPiece3', 'Vin', 'original design for a dnd player character', 3), --art ID 7
+('./img/silentChillzPiece4', 'Zaiwure', 'original design for baldurs gate 3 tav', 3), --art ID 8
+('./img/remnantOfPiece1', 'Pixel Landscape 1', 'pixel design for landscape - part of pair', 4), --art ID 9
+('./img/remnantOfPiece2', 'Pixel Landscape 2', 'pixel design for landscape - part of pair', 4), --art ID 10
+('./img/bacoosePiece1', 'Mulligan', 'bust design for original character', 5), --art ID 11
+('./img/bacoosePiece2', 'Pynk', 'original design for a dnd player character', 5), --art ID 12
+('./img/bacoosePiece3', 'The Alchemist', 'couple art depicting a backstory moment for a dnd player character', 5), --art ID 13
+('./img/bacoosePiece4', 'Gone', 'token art for a dnd player character', 5); --art ID 14
+
+--gallery information
+
+INSERT INTO gallery_info (user_id, art_id) VALUES
+(2, 1), --gallery 1
+(3, 5), --gallery 2
+(4, 9), --gallery 3
+(5, 11); --gallery 4
+
+--gallery 1 fill out
+
+--INSERT INTO gallery_info (art_id) WHERE gallery_id = 1 VALUES 2;
 
 
 COMMIT;
