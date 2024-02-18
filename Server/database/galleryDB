@@ -70,9 +70,4 @@ INSERT INTO gallery_info (user_id, art_id) VALUES
 (4, 9), --gallery 3
 (5, 11); --gallery 4
 
---gallery 1 fill out
-
---INSERT INTO gallery_info (art_id) WHERE gallery_id = 1 VALUES 2;
-
-
 COMMIT;
