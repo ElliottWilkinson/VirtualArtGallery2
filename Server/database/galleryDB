@@ -25,12 +25,11 @@ CREATE TABLE art_info (
 
 CREATE TABLE gallery_info (
 
-    gallery_id serial,
+    gallery_id serial PRIMARY KEY,
 	user_id integer,
 	art_id integer,
-	CONSTRAINT pk_gallery PRIMARY KEY (user_id, art_id),
-	FOREIGN KEY (user_id) REFERENCES user_info(user_id),
-	FOREIGN KEY (art_id) REFERENCES art_info(art_id)
+	CONSTRAINT fk_gallery_user FOREIGN KEY (user_id) REFERENCES user_info(user_id),
+	CONSTRAINT fk_gallery_art FOREIGN KEY (art_id) REFERENCES art_info(art_id)
 
 );
 
@@ -39,19 +38,19 @@ CREATE TABLE gallery_info (
 --users
 
 INSERT INTO user_info (user_name, email_address, password, role) VALUES
-('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'),
-('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'),
-('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'),
-('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'),
-('bacoose', 'bacoose@user.com', 'password', 'ROLE_USER');
+('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'), --user ID 1
+('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'), --user ID 2
+('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'), --user ID 3
+('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'), --user ID 4
+('bacoose', 'bacoose@user.com', 'password', 'ROLE_USER'); --user ID 5
 
 --art
 
 INSERT INTO art_info (image_name, caption, description, user_id) VALUES
-('./img/battleBunneArtPiece1.png', 'Aphrodite', 'fanart for the roguelike Hades', 2),
-('./img/battleBunneArtPiece2.png', 'Ceres', 'original design for a dnd player character', 2),
-('./img/battleBunneArtPiece3.png', 'Leo', 'valentines variant of a dnd player character', 2),
-('./img/battleBunneArtPiece4.png', 'Velvari', 'original design for a dnd player character', 2);
+('./img/battleBunneArtPiece1.png', 'Aphrodite', 'fanart for the roguelike Hades', 2), --art ID 1
+('./img/battleBunneArtPiece2.png', 'Ceres', 'original design for a dnd player character', 2), --art ID 2
+('./img/battleBunneArtPiece3.png', 'Leo', 'valentines variant of a dnd player character', 2), --art ID 3
+('./img/battleBunneArtPiece4.png', 'Velvari', 'original design for a dnd player character', 2); --art ID 4
 --CONTINUE WITH SILENTCHILLZ
 
 
