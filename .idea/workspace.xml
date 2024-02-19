@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ca37856-a595-497e-b091-292e6cacfe58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/exception/DaoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/LoginResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/RegisterUserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/JwtAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/SecurityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserModelDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserNotActivatedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/JWTConfigurer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/JWTFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/loginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/LoginDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/classes/main.java.org.example/controllers/AuthenticationController.class" beforeDir="false" />
-    </list>
+    <list default="true" id="0ca37856-a595-497e-b091-292e6cacfe58" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
