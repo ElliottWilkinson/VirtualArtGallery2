@@ -3,11 +3,13 @@ package main.java.org.example.controllers;
 import javax.validation.Valid;
 import main.java.org.example.exception.DaoException;
 import main.java.org.example.model.*;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.*;
 import main.java.org.example.dao.UserDao;
 import main.java.org.example.security.jwt.TokenProvider;
@@ -49,7 +51,7 @@ public class AuthenticationController {
     public User register(@Valid @RequestBody RegisterUserDto newUser) {
         try {
             User user = userDao.createUser(
-                    new User(newUser.getUsername(),newUser.getPassword(), newUser.getRole())
+                    new User(newUser.getUsername(),newUser.getPassword(), newUser.getRole(), newUser.getEmail())
             );
             return user;
         }

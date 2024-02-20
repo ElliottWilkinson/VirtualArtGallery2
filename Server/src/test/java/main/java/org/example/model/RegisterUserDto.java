@@ -7,6 +7,8 @@ public class RegisterUserDto
     @NotEmpty
     private String username;
     @NotEmpty
+    private String email;
+    @NotEmpty
     private String password;
     @NotEmpty
     private String confirmedPassword;
@@ -42,6 +44,16 @@ public class RegisterUserDto
     public void setConfirmedPassword(String confirmedPassword)
     {
         this.confirmedPassword = confirmedPassword;
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+
+    public void setEmail(String email)
+    {
+        this.email = email;
     }
 
     public String getRole()
