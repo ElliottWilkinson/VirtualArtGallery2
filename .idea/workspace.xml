@@ -5,11 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca37856-a595-497e-b091-292e6cacfe58" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Server/module-02-final-project-final.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/database/galleryDB" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database/galleryDB.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/controllers/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/controllers/AuthenticationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/postman/Virtual-Art-Gallery-2.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/postman/Virtual-Art-Gallery-2.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/GalleryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/GalleryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/exception/DaoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/exception/DaoException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/Authority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/Gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/Gallery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/LoginDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/LoginDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/LoginResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/LoginResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/RegisterUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/RegisterUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/tokenDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/tokenDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/JwtAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/JwtAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/SecurityUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/SecurityUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserModelDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/UserModelDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserNotActivatedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/UserNotActivatedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/JWTConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/JWTConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/JWTFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/JWTFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/controllers/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/dao/GalleryDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/dao/JdbcUserDao$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/dao/JdbcUserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/exception/DaoException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/Authority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/Gallery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/LoginDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/LoginResponseDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/RegisterUserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/model/tokenDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/JwtAccessDeniedHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/JwtAuthenticationEntryPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/SecurityUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/UserModelDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/UserNotActivatedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/WebSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/jwt/JWTConfigurer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/jwt/JWTFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/security/jwt/TokenProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/VirtualArtGallery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/VirtualArtGallery.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,19 +84,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "last_opened_file_path": "C:/Users/Student/workspace/jessica-kinsman-student-code/java/module-2/week-9/final-project"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Student/workspace/jessica-kinsman-student-code/java/module-3/week-9/final-project"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2\Server\src\main" />
       <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2\Server" />
       <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2" />
       <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2\Server\src" />
       <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2\Server\database" />
-      <recent name="C:\Users\Student\workspace\side-projects\VirtualArtGallery2\Server\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.org.example.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.org.example.Application" />
       <module name="module-02-final-project-final" />
@@ -63,8 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="org.example.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <module name="module-02-final-project-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.org.example.Application" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -84,34 +146,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java</url>
           <line>35</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java</url>
           <line>45</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java</url>
           <line>50</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java</url>
           <line>75</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <url>file://$PROJECT_DIR$/Server/src/main/java/org/example/security/jwt/TokenProvider.java</url>
           <line>92</line>
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,123 +1,86 @@
 {
-  "info":
-  {
+  "info": {
     "_postman_id": "b8d5176e-8ea6-48e9-a794-f265c6568171",
     "name": "Virtual-Art-Gallery-2",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
-  "item":
-  [
+  "item": [
     {
       "name": "Auth",
-      "item":
-      [
+      "item": [
         {
-          "name": "User",
-          "item":
-          [
-            {
-              "name": "Get Users",
-              "request":
-              {
-                "method": "GET",
-                "header": [],
-                "url":
-                {
-                  "raw": "{{baseUrl}}/users",
-                  "host":
-                  [
-                    "{{baseUrl}}"
-                  ],
-                  "path":
-                  [
-                    "users"
-                  ]
-                }
-              },
-              "response": []
-            },
-            {
-              "name": "Get Single User",
-              "request": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "{{baseUrl}}/users/1",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "users/1"
-                  ]
-                },
-                "response": []
-              }
-            },
-            {
-              "name": "Delete User",
-              "request": {
-                "method": "DELETE",
-                "header": [],
-                "url": {
-                  "raw": "{{baseUrl}}/users/1",
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "path": [
-                    "users/1"
-                  ]
-                }
-              },
-              "response": []
-            },
-            {
-              "name": "Create User",
-              "request":
-              {
-                "method": "POST",
-                "header": [],
-                "url":
-                {
-                  "raw": "{{baseUrl}}/users",
-                  "host":
-                  [
-                    "{{baseUrl}}"
-                  ],
-                  "path":
-                  [
-                    "users"
-                  ]
-                }
-              },
-              "response":[]
-            },
-              {
-                "name": "Update User",
-                "request":
-                {
-                  "method": "PUT",
-                  "header": [],
-                  "url": {
-                    "raw": "{{baseUrl}}/users/1",
-                    "host":
-                    [
-                    "{{baseUrl}}"
-                    ],
-                    "path": [
-                        "users/1"
-                    ]
-                  }
-                },
-              "response": []
+          "name": "Delete User",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users/1"
+              ]
             }
-          ]
+          },
+          "response": []
+        },
+        {
+          "name": "Update User",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users/1"
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
     {
-      "name" : "Gallery",
-      "item":
-      [
+      "name": "Get Users",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/users/1",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "users/1"
+          ]
+        },
+        "response": []
+      }
+    },
+    {
+      "name": "Gallery",
+      "item": [
         {
           "name": "Get Gallery",
           "request": {
@@ -133,9 +96,89 @@
               ]
             }
           },
-          "response" :[]
+          "response": []
         }
       ]
+    },
+    {
+      "name": "Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();\r",
+              "pm.collectionVariables.set(\"token\", jsonData.token);\r",
+              ""
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "protocolProfileBehavior": {
+        "strictSSL": false
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"password\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/login",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Register user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"mike\",\r\n    \"password\": \"password\",\r\n    \"confirmPassword\": \"password\",\r\n    \"role\": \"USER\",\r\n    \"name\": \"User One\",\r\n    \"address\": \"1 User address, Anyplace 12345\",\r\n    \"city\": \"Willowick\",\r\n    \"stateCode\": \"OH\",\r\n    \"zip\": \"44094\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/register",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "register"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:9000",
+      "type": "default"
+    },
+    {
+      "key": "token",
+      "value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY1NzY0MzI3NH0.DVYTDK3fsn80scCDYSCxdN4itbTObMVVzlpJmNZd1pC-Uh1fjLwUPN-du-OjeUTFBtDWvEuPiVjXXd1L_Dzh-A",
+      "type": "default"
     }
   ]
 }

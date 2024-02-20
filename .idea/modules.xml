@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/VirtualArtGallery.iml" filepath="$PROJECT_DIR$/VirtualArtGallery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Server/module-02-final-project-final.iml" filepath="$PROJECT_DIR$/Server/module-02-final-project-final.iml" />
     </modules>
   </component>
 </project>
