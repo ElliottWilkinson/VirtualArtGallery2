@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca37856-a595-497e-b091-292e6cacfe58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/database/galleryDB" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database/galleryDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/RegisterUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/RegisterUserDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserModelDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/UserModelDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/main/java/org/example/services/authenticationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/test/java/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/test/java/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/controllers/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Server/target/test-classes/main/java/org/example/controllers/AuthenticationController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,5 +79,41 @@
       <updated>1705852011358</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/security/jwt/TokenProvider.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Server/src/test/java/main/java/org/example/controllers/AuthenticationController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

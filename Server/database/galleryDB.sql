@@ -6,8 +6,8 @@ CREATE TABLE user_info (
 
 	user_id serial PRIMARY KEY,
 	user_name varchar(80) NOT NULL,
+	password_hash varchar(80) NOT NULL,
 	email_address varchar(80) NOT NULL,
-	password varchar(80) NOT NULL, 
 	role varchar (50) NOT NULL
 
 );
@@ -46,7 +46,7 @@ CREATE TABLE gallery_item (
 
 --user information
 
-INSERT INTO user_info (user_name, email_address, password, role) VALUES
+INSERT INTO user_info (user_name, email_address, password_hash, role) VALUES
 ('admin', 'admin@admin.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_ADMIN'),
 ('battlebunneart', 'battlebunneart@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'),
 ('silentchillz', 'silentchillz@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'),
