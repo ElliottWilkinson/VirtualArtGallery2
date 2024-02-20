@@ -47,11 +47,11 @@ CREATE TABLE gallery_item (
 --user information
 
 INSERT INTO user_info (user_name, email_address, password, role) VALUES
-('admin', 'admin@admin.com', 'password', 'ROLE_ADMIN'),
-('battlebunneart', 'battlebunneart@user.com', 'password', 'ROLE_USER'),
-('silentchillz', 'silentchillz@user.com', 'password', 'ROLE_USER'),
-('remnantof', 'remnantof@user.com', 'password', 'ROLE_USER'),
-('bacoose', 'bacoose@user.com', 'password', 'ROLE_USER'); --user ID 5
+('admin', 'admin@admin.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_ADMIN'),
+('battlebunneart', 'battlebunneart@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'),
+('silentchillz', 'silentchillz@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'),
+('remnantof', 'remnantof@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'),
+('bacoose', 'bacoose@user.com', '$2a$10$tmxuYYg1f5T0eXsTPlq/V.DJUKmRHyFbJ.o.liI1T35TFbjs2xiem', 'ROLE_USER'); --user ID 5
 
 --art information
 
