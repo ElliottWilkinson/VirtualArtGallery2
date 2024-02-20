@@ -43,12 +43,44 @@ export default {
     }, 
 
     methods: {
-        
-    }
+        login() {
+            authService
+            .login(this.user)
+            .then((response) => {
+                if (response.status === 200) {
+                    this.$store.commit("SET_AUTH_TOKEN", response.data.token);
+                    this.$store.commit("SET_USER", response.data.user);
+                    //this.$router.push("/"); <-- comment back in when home page is created
+                }
+            })
+            .catch((error) => {
+                const response = error.response;
+                if(!response) {
+                    alert(error);
+                } else if (response.status === 401) {
+                    alert("Invalid Username or Password");
+                } else {
+                    alert(response.message);
+                }
+            });
+        }, 
+    }, 
 
-}
+};
 </script>
 
 <style>
 
+    #login {
+        display: flex;
+        text-align: center;
+        padding: 10px;
+    }
+
+    #fields {
+        display: grid;
+        text-align: center;
+        color: black;
+        background-color: white;
+    }
 </style>
