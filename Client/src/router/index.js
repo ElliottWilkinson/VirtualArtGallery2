@@ -4,6 +4,25 @@ import {useStore} from 'vuex'
 import LoginView from '../views/LoginView.vue'
 
 const routes = [
+
+    // need to create and import the path needed for a home view that shows all art
+    
+    {
+        path: '/',
+        name: 'home',
+        redirect: {name: "art"},
+    },
+
+    // {
+    //     path: '/art', 
+    //     name: '/art',
+    //     component: ArtView,
+    //     meta: {
+    //         requiresAuth: false
+    //     }
+
+    // }, 
+    
     {
         path: '/login', 
         name: 'login', 
