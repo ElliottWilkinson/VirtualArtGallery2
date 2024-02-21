@@ -131,9 +131,9 @@ public class User
     public String toString()
     {
         return "User" +
-                "\nuserId= " + userId +
-                "\nuserName= '" + userName + '\'' +
-                "\npassword= '" + password + '\'';
+                "\nuserId: " + userId +
+                "\nuserName: '" + userName + '\'' +
+                "\npassword: '" + password + '\'';
     }
 
 }

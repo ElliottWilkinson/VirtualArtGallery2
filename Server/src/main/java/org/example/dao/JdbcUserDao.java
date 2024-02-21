@@ -16,7 +16,7 @@ import java.util.List;
 public class JdbcUserDao implements UserDao
 {
     private JdbcTemplate template;
-    private RowMapper<User> MAPPER = new RowMapper()
+    private final RowMapper<User> MAPPER = new RowMapper()
     {
         @Override
         public Object mapRow(ResultSet rs, int i) throws SQLException
@@ -45,7 +45,7 @@ public class JdbcUserDao implements UserDao
              users = template.query(sql, MAPPER);
          }catch(CannotGetJdbcConnectionException e)
          {
-            throw new CannotGetJdbcConnectionException("Cannot get connection. " + e);
+            throw new DaoException("Cannot get connection. " + e);
          }
          return users;
     }

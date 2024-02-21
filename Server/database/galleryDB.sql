@@ -34,7 +34,7 @@ CREATE TABLE gallery_info (
 
 CREATE TABLE gallery_item (
 
-    gallery_item_id SERIAL,
+    gallery_item_id serial PRIMARY KEY,
     gallery_id int NOT NULL,
     art_id int NOT NULL,
     CONSTRAINT fk_gallery_item_gallery FOREIGN KEY (gallery_id) REFERENCES gallery_info(gallery_id),
