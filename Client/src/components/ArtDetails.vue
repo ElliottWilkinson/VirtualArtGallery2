@@ -20,7 +20,9 @@ export default {
     props: ['artPiece'], 
 
     computed: { 
-
+        isLoggedIn(){
+            return this.$store.token.length > 0;
+        }
     }
 }
 </script>
