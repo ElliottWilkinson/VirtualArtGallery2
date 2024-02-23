@@ -5,6 +5,9 @@
       </header>
 
       <nav>
+        <router-link v-bind:to="{ name: 'home'}">
+          Home
+        </router-link>
         <router-link v-bind:to="{ name: 'logout' }" v-if="$store.state.token">
           Logout
         </router-link>
@@ -33,5 +36,17 @@
    grid-template-rows: 200px 25px 1fr 25px;
    height: 100vh;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ header {
+   grid-area: header;
+ }
+
+ nav{
+   grid-area: nav;
+ }
+
+ main{
+   grid-area: main;
  }
 </style>

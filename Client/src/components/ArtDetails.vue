@@ -29,4 +29,35 @@ export default {
 
 <style>
 
+    #art-details{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .art-details{
+        display: grid;
+        grid-template-areas:
+        "image image"
+        "title title"
+        "description description";
+        color: white;
+        background-color: black;
+        padding: 10px;
+
+    }
+
+    .art-image{
+        grid-area: image;
+    }
+
+    .art-caption{
+        grid-area: title;
+    }
+
+    .art-description {
+        grid-area: description;
+    }
+
 </style>

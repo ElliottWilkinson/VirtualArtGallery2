@@ -2,6 +2,7 @@ import { createRouter as createRouter, createWebHistory } from 'vue-router'
 import {useStore} from 'vuex'
 
 import LoginView from '../views/LoginView.vue'
+import ArtView from '../views/ArtView.vue'
 
 const routes = [
 
@@ -13,15 +14,15 @@ const routes = [
         redirect: {name: "art"},
     },
 
-    // {
-    //     path: '/art', 
-    //     name: '/art',
-    //     component: ArtView,
-    //     meta: {
-    //         requiresAuth: false
-    //     }
+    {
+        path: '/art', 
+        name: 'art',
+        component: ArtView,
+        meta: {
+            requiresAuth: false
+        }
 
-    // }, 
+    }, 
     
     {
         path: '/login', 
