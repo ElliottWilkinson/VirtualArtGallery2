@@ -2,7 +2,9 @@ import { createRouter as createRouter, createWebHistory } from 'vue-router'
 import {useStore} from 'vuex'
 
 import LoginView from '../views/LoginView.vue'
+import LogoutView from '../views/LogoutView.vue'
 import ArtView from '../views/ArtView.vue'
+import ArtDetailsView from '../views/ArtDetailsView.vue'
 
 const routes = [
 
@@ -32,6 +34,24 @@ const routes = [
             requiresAuth: false
         }
     }, 
+
+    {
+        path: "/logout", 
+        name: "logout", 
+        component: LogoutView,
+        meta: {
+            requiresAuth: false
+        }
+    }, 
+
+    {
+        path: "/art/:artId",
+        name: "artDetails", 
+        component: ArtDetailsView, 
+        meta: {
+            requiresAuth: false
+        }
+    }
 
 ];
 
