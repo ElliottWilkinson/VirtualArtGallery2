@@ -36,7 +36,7 @@ public class JdbcArtDao implements ArtDao
     public List<Art> getArt()
     {
         List<Art> getArt;
-        String sql = "";
+        String sql = "SELECT * FROM art_info";
         try{
             getArt = template.query(sql, MAPPER);
         }catch(CannotGetJdbcConnectionException e){
