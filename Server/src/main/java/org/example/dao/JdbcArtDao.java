@@ -8,7 +8,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class JdbcArtDao implements ArtDao
@@ -36,7 +35,7 @@ public class JdbcArtDao implements ArtDao
     @Override
     public List<Art> getArt()
     {
-        List<Art> getArt = new ArrayList<>();
+        List<Art> getArt;
         String sql = "";
         try{
             getArt = template.query(sql, MAPPER);
@@ -86,7 +85,7 @@ public class JdbcArtDao implements ArtDao
     }
 
     @Override
-    public List<Art> getArtByName(String name, boolean useWildcard)
+    public Art getArtByName(String name, boolean useWildcard)
     {
         List<Art> getArt;
         String sql = "";
@@ -99,6 +98,6 @@ public class JdbcArtDao implements ArtDao
         catch (CannotGetJdbcConnectionException e) {
             throw new DaoException("Cannot get connection. " +e);
         }
-        return getArt;
+        return getArt.isEmpty() ? null: getArt.get(0);
     }
 }

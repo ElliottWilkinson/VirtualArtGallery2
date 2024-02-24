@@ -10,5 +10,5 @@ public interface ArtDao
     Art getArtById(int artId);
     List<Art> getArtByUserId(int userId);
     List<Art> getArtByGalleryId(int galleryId);
-    List<Art> getArtByName(String name, boolean useWildCard);
+    Art getArtByName(String name, boolean useWildCard);
 }

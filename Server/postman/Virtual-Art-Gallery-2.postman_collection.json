@@ -62,48 +62,133 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Create Gallery",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Gallery Item",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1/item",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1/item"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Gallery",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Gallery",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Gallery Item",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1/item/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1/item/1"
+              ]
+            }
+          },
+          "response": []
         }
       ]
-    },
-    {
-      "name": "Get Users",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{baseUrl}}/users",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "users"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "Get Single User",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "{{baseUrl}}/users/1",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "users/1"
-          ]
-        },
-        "response": []
-      }
     },
     {
       "name": "Gallery",
       "item": [
         {
-          "name": "Get Gallery",
+          "name": "Get Galleries",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Gallery By User Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users/1/gallery",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users/gallery/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Gallery by Gallery Id",
           "request": {
             "method": "GET",
             "header": [],
@@ -118,76 +203,256 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Get Gallery by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery?name=favorites",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery?name=favorites"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Gallery item by gallery item id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/item/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/item/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Gallery items by galleryId",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1/item",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "gallery/1/item"
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
     {
-      "name": "Login",
-      "event": [
+      "name": "Art",
+      "item": [
         {
-          "listen": "test",
-          "script": {
-            "exec": [
-              "var jsonData = pm.response.json();\r",
-              "pm.collectionVariables.set(\"token\", jsonData.token);\r",
-              ""
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "protocolProfileBehavior": {
-        "strictSSL": false
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"password\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+          "name": "Get Art",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/art",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "/art"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "{{baseUrl}}/login",
-          "host": [
-            "{{baseUrl}}"
-          ],
-          "path": [
-            "login"
-          ]
+        {
+          "name": "Get Art by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/art/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "/art/1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Art",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/user/1/art",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "/user/1/art"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Art by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/art?name=cat",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "/art?name=cat"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Art by Gallery Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/gallery/1/art",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "/gallery/1/art"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     },
     {
-      "name": "Register user",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"username\": \"mike\",\r\n    \"password\": \"password\",\r\n    \"confirmPassword\": \"password\",\r\n    \"role\": \"USER\",\r\n    \"name\": \"User One\",\r\n    \"address\": \"1 User address, Anyplace 12345\",\r\n    \"city\": \"Willowick\",\r\n    \"stateCode\": \"OH\",\r\n    \"zip\": \"44094\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get Users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users"
+              ]
             }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single User",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users/1",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users/1"
+              ]
+            },
+            "response": []
           }
         },
-        "url": {
-          "raw": "{{baseUrl}}/register",
-          "host": [
-            "{{baseUrl}}"
+        {
+          "name": "Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();\r",
+                  "pm.collectionVariables.set(\"token\", jsonData.token);\r",
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
           ],
-          "path": [
-            "register"
-          ]
+          "protocolProfileBehavior": {
+            "strictSSL": false
+          },
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"user\",\r\n    \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Register user",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"mike\",\r\n    \"password\": \"password\",\r\n    \"confirmPassword\": \"password\",\r\n    \"role\": \"USER\",\r\n    \"name\": \"User One\",\r\n    \"address\": \"1 User address, Anyplace 12345\",\r\n    \"city\": \"Willowick\",\r\n    \"stateCode\": \"OH\",\r\n    \"zip\": \"44094\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "register"
+              ]
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     }
   ],
   "variable": [

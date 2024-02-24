@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ca37856-a595-497e-b091-292e6cacfe58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/ArtController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/ArtDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcArtDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/Art.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/GalleryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcGalleryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/GalleryItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/database/galleryDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Server/database/galleryDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/module-02-final-project-final.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/postman/Virtual-Art-Gallery-2.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/postman/Virtual-Art-Gallery-2.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/ArtController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/ArtController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/ArtDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/ArtDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/GalleryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/GalleryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcArtDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcArtDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/src/main/java/org/example/model/Gallery.java" beforeDir="false" afterPath="$PROJECT_DIR$/Server/src/main/java/org/example/model/Gallery.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Student/workspace/jessica-kinsman-student-code/java/module-3/week-9/final-project"
+    "last_opened_file_path": "C:/Users/Student/workspace/jessica-kinsman-student-code/java/module-2/week-7/01_Server_Side_APIs_Part_1"
   }
 }]]></component>
   <component name="RecentsManager">

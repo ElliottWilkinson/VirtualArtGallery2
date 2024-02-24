@@ -84,8 +84,8 @@ public class JdbcUserDao implements UserDao
     @Override
     public User createUser(User newUser)
     {
-        User user = null;
-        String sql = "INSERT INTO user_info (user_name, email_address, password, role) VALUES (?,?,?,?)";
+
+        String sql = "INSERT INTO user_info (user_name, email_address, password, role) VALUES (?,?,?,?) RETURNING user_id";
         if(newUser.getPassword() == null)
         {
             throw new DaoException("User cannot be created with null password");
@@ -93,8 +93,8 @@ public class JdbcUserDao implements UserDao
         try
         {
             String passwordHash = new BCryptPasswordEncoder().encode(newUser.getPassword());
-            int userId = template.queryForObject(sql,int.class, newUser.getUserName(),  newUser.getEmail(), passwordHash, newUser.getAuthoritiesString());
-            user = getUserById(userId);
+            int userId = template.update(sql,int.class, newUser.getUserName(),  newUser.getEmail(), passwordHash, newUser.getAuthoritiesString());
+            return getUserById(userId);
         }catch(CannotGetJdbcConnectionException e)
         {
             throw new DaoException("Cannot get connection. " +e);
@@ -102,23 +102,34 @@ public class JdbcUserDao implements UserDao
         {
             throw new DaoException("Data integrity violation. " +e);
         }
-        return user;
     }
 
     @Override
     public User updateUser(User updatedUser)
     {
-        User user = null;
         String sql = "";
         try
         {
             String passwordHash = new BCryptPasswordEncoder().encode(updatedUser.getPassword());
-            int userId = template.queryForObject(sql, int.class, updatedUser.getUserId(), updatedUser.getPassword(), updatedUser.getEmail(), passwordHash, updatedUser.getAuthoritiesString());
-            user = getUserById(userId);
+            int userId = template.update(sql, int.class, updatedUser.getUserId(), updatedUser.getPassword(), updatedUser.getEmail(), passwordHash, updatedUser.getAuthoritiesString());
+            return getUserById(userId);
         }catch(CannotGetJdbcConnectionException e)
         {
             throw new DaoException("Cannot get connection. " + e);
         }
-        return user;
     }
+
+    @Override
+    public void deleteUser(int id)
+    {
+        String sql = "";
+        try
+        {
+            template.update(sql, id);
+        }catch(CannotGetJdbcConnectionException e){
+             throw new DaoException("Cannot get connection. " +e);
+        }
+    }
+
+
 }
